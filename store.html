@@ -142,7 +142,15 @@
       </section>
     </main>
     <footer class="main-footer">
-      <section class="map"><!-- Тут будет карта --></section>
+      <section class="map">
+        <img src="img\map.jpg" alt="Карта Как добраться?">
+        <img src="img\map-marker.png" alt="Маркер на карте">
+        <div class="contacts">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
+          <a class="button" href="#">Напишите нам</a>
+        </div>
+      </section>
       <div class="footer-social">
         <a class="social-btn" href="#"><img src="img\vk-icon.svg" alt="Иконка Вконтакте"></a>
         <a class="social-btn" href="#"><img src="img\fb-icon.svg" alt="Иконка Facebook"></a>
@@ -150,14 +158,20 @@
         <p><b>Давайте дружить, это выгодно!</b><br> <span>Скидка 10% для друзей из социальных сетей.</span></p>
       </div>
     </footer>
-    <section class="map">
-      <img src="img\map.jpg" alt="Карта Как добраться?">
-      <img src="img\map-marker.png" alt="Маркер на карте">
-      <div class="contacts">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
-        <a class="button" href="#">Напишите нам</a>
-      </div>
-    </section>
+    <div class="popup">
+      <h2>Напишите нам</h2>
+      <form class="write-us" action="index.html" method="post">
+        <label for="your-name">Ваше имя:</label>
+        <input type="text" name="your-name" id="your-name" value="Имя Фамилия">
+
+        <label for="your-email">Ваш e-mail:</label>
+        <input type="email" name="your-email" id="your-email" value="email@example.com">
+
+        <label for="mail-text">Текст письма:</label>
+        <textarea name="mail-text" id="mail-text" rows="6" cols="80">В свободной форме</textarea>
+
+        <input type="submit" value="Отправить">
+      </form>
+    </div>
   </body>
 </html>
