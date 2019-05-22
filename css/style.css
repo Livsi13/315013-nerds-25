@@ -1,0 +1,371 @@
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v19-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v19-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  .main-navigation {
+    font-size: inherit;
+    line-height: 30px;
+    text-transform: uppercase;
+    background-color: #eeeeee;
+
+  }
+
+  .menu,
+  .user-navigation {
+    list-style: none;
+  }
+
+  .menu a:hover,
+  .user-navigation a:hover,
+  .menu a:focus,
+  .user-navigation a:focus {
+    color: #fb565a;
+  }
+
+  .menu a:active,
+  .user-navigation a:active {
+    color: #bcbcbc;
+  }
+
+  .slider {
+  background-color: #eeeeee;
+  text-align: left;
+  }
+
+  .slider-list {
+  list-style: none;
+  text-align: left;
+  }
+
+  .slide-slogan {
+  font-size: 55px;
+  line-height: 55px;
+  }
+
+  .description .button {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: #fb565a;
+    border: none;
+    padding: 19px 54px;
+  }
+
+  .description .button:hover,
+  .description .button:focus {
+    background-color: #e74246;
+  }
+
+  .description .button:active {
+    color: #ffb2b4;
+    background-color: #d7373b;
+  }
+
+  .feature {
+    text-align: left;
+  }
+
+  .feature-name {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .button-1 {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: #fb565a;
+    border: none;
+    padding: 19px 40px;
+  }
+
+  .button-1:hover,
+  .button-1:focus {
+    background-color: #e74246;
+  }
+
+  .button-1:active {
+    color: #ffb2b4;
+    background-color: #d7373b;
+  }
+
+  .button-2 {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: #00ca74;
+    border: none;
+    padding: 19px 40px;
+  }
+
+  .button-2:hover,
+  .button-2:focus {
+    background-color: #00bc6c;
+  }
+
+  .button-2:active {
+    color: #74c69a;
+    background-color: #00aa62;
+  }
+
+  .button-3 {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: #efc84a;
+    border: none;
+    padding: 19px 40px;
+  }
+
+  .button-3:hover,
+  .button-3:focus {
+    background-color: #eab534;
+  }
+
+  .button-3:active {
+    color: #edc47c;
+    background-color: #e5a722;
+  }
+
+  .services {
+  text-align: left;
+  list-style: none;
+  }
+
+  .lead {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .service-list {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .indicators p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .numbers th {
+    font-size: 45px;
+    line-height: 10.06px;
+  }
+
+  .numbers td {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+  }
+
+  address p {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+    color: #666666;
+    font-style: normal;
+
+    background-color: inherit;
+  }
+
+  .company-name {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+  }
+
+  address .button {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-style: normal;
+
+    background-color: #fb565a;
+    border: none;
+    padding: 19px 45px;
+  }
+
+  .promo {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    font-weight: bold;
+    background-color: #ffffff;
+  }
+
+  .footer-promo span {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    color: #444444;
+  }
+
+  .page-title {
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+
+    background-color: #eeeeee;
+  }
+
+
+  .sort-type {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+
+
+  }
+
+  .sort-by {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: #686d6f;
+
+    list-style: none;
+  }
+
+  .filters button {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    font-style: normal;
+
+    background-color: #eeeeee;
+    border: none;
+    padding: 19px 89px;
+  }
+
+  .filters button:hover,
+  .filters button:focus {
+    background-color: #dfdfdf;
+  }
+
+  .filters button:active {
+    color: #a8a8a8;
+    background-color: #d5d5d5;
+  }
+
+  .sort-types, .more-less {
+    list-style: none;
+  }
+
+  .sort-types a{
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #c9c9c9;
+    font-style: normal;
+  }
+
+  .sort-types a:focus,
+  .sort-types a:hover {
+    color: #8b8b8b;
+  }
+
+  .sort-types a:active {
+    color: #000000;
+  }
+
+  .pagination-list {
+    list-style: none;
+
+  }
+
+  .pagination-item a {
+    color: #000000;
+
+    background-color: #eeeeee;
+    padding: 19px 21px;
+  }
+
+  .pagination-item a:focus,
+  .pagination-item a:hover {
+    background-color: #dfdfdf;
+  }
+
+  .pagination-item a:active {
+    color: #a8a8a8;
+
+    background-color: #d5d5d5;
+  }
+
+  .pagination-item-current a:hover,
+  .pagination-item-current a:focus,
+  .pagination-item-current a:active {
+    color: #000000;
+
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #dbdbdb;
+  }
+
+  .next a{
+    color: #000000;
+
+    background-color: #eeeeee;
+    padding: 19px 79px;
+  }
+
+  .next a:focus,
+  .next a:hover {
+    background-color: #dfdfdf;
+  }
+
+  .next a:active {
+    color: #a8a8a8;
+
+    background-color: #d5d5d5;
+  }

@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -29,16 +28,16 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filters" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="price-range">Стоимость:</label>
+          <label for="price-range" class="sort-type">Стоимость:</label>
           <input type="range" id="price-range" name="price-range" min="0" max="15000">
-          <label for="range-from">От</label>
+          <label for="range-from" class="sort-type">От</label>
           <input type="number" name="range-from" id="range-from">
-          <label for="range-to">До</label>
+          <label for="range-to" class="sort-type">До</label>
           <input type="number" name="range-to" id="range-to">
 
           <fieldset>
-            <legend>Сетка:</legend>
-            <ul>
+            <legend class="sort-type">Сетка:</legend>
+            <ul class="sort-by">
               <li>
                 <input type="radio" name="grid-type" value="adaptive" id="adaptive">
                 <label for="adaptive">Адаптивная</label>
@@ -55,8 +54,8 @@
           </fieldset>
 
           <fieldset>
-            <legend>Особенности:</legend>
-            <ul>
+            <legend class="sort-type">Особенности:</legend>
+            <ul class="sort-by">
               <li>
                 <input type="checkbox" name="slider" id="slider">
                 <label for="slider">Слайдер</label>
@@ -82,8 +81,8 @@
 
           <button type="submit">Показать</button>
         </form>
-        <div class="sort-by">
-          <p>Сортировать:</p>
+        <div class="sort">
+          <p class="sort-type">Сортировать:</p>
           <ul class="sort-types">
             <li>
               <a href="#" class="by-price">по&nbsp;цене</a>
