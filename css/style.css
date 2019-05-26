@@ -34,6 +34,11 @@ a {
   list-style: none;
 }
 
+.menu a,
+.user-navigation a {
+  color: #000000;
+}
+
 .menu a:hover,
 .user-navigation a:hover,
 .menu a:focus,
@@ -56,23 +61,22 @@ a {
 }
 
 .button {
-  font-size: 16px;
+  color: #ffffff;
   line-height: 18px;
-  text-align: center;
   text-transform: uppercase;
 
   padding-top: 19px;
   padding-bottom: 19px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .description-button {
-  color: #ffffff;
 
   background-color: #fb565a;
   border: none;
-  padding-left: 45px;
-  padding-right: 45px;
   margin: 40px 50px;
+  display: inline-block;
 }
 
 .description-button:hover,
@@ -91,15 +95,15 @@ a {
   text-transform: uppercase;
 }
 
-.button-red {
-  color: #ffffff;
-
-  background-color: #fb565a;
-  border: none;
+.feature .button {
   padding-left: 40px;
   padding-right: 40px;
 
   display: inline-block;
+}
+
+.button-red {
+  background-color: #fb565a;
 }
 
 .button-red:hover,
@@ -113,17 +117,7 @@ a {
 }
 
 .button-green {
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-
   background-color: #00ca74;
-  border: none;
-  padding: 19px 40px;
-
-  display: inline-block;
 }
 
 .button-green:hover,
@@ -137,17 +131,7 @@ a {
 }
 
 .button-yellow {
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-
   background-color: #efc84a;
-  border: none;
-  padding: 19px 40px;
-
-  display: inline-block;
 }
 
 .button-yellow:hover,
@@ -172,7 +156,6 @@ a {
 }
 
 .indicators p {
-  line-height: 24px;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -191,8 +174,6 @@ a {
   line-height: 18px;
   color: #666666;
   font-style: normal;
-
-  background-color: inherit;
 }
 
 .company-name {
@@ -202,19 +183,17 @@ a {
 }
 
 address .button {
-  color: #ffffff;
   font-style: normal;
 
   background-color: #fb565a;
-  border: none;
-  padding: 19px 45px;
+
+  display: inline-block;
 }
 
 .promo {
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
-  background-color: #ffffff;
 }
 
 .footer-promo span {
@@ -275,11 +254,33 @@ address .button {
   color: #000000;
 }
 
+.price-button {
+  background-color: #fb565a;
+
+  padding-left: 60px;
+  padding-right: 60px;
+
+  display: inline-block;
+}
+
+.price-button:focus,
+.price-button:hover {
+  background-color: #e74246;
+}
+
+.price-button:active {
+  background-color: #d7373b;
+}
+
 .pagination-item a[href] {
   color: #000000;
 
   background-color: #eeeeee;
   padding: 19px 21px;
+
+  border: 2px solid #dbdbdb;
+
+  display: inline-block;
 }
 
 .pagination-item a[href]:focus,
@@ -293,20 +294,22 @@ address .button {
   background-color: #d5d5d5;
 }
 
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
+.pagination-item-current a[href]:focus,
+.pagination-item-current a[href]:hover,
+.pagination-item-current a[href]:active {
   background-color: #ffffff;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #dbdbdb;
 }
+
 
 .next a{
   color: #000000;
 
   background-color: #eeeeee;
   padding: 19px 79px;
+
+  display: inline-block;
+
+  border: 2px solid #dbdbdb;
 }
 
 .next a:focus,
