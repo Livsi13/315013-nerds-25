@@ -32,6 +32,8 @@ a {
 
 .list-style-reset {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu a,
@@ -69,24 +71,14 @@ a {
   padding-bottom: 19px;
   padding-left: 45px;
   padding-right: 45px;
-}
 
-.description-button {
-
-  background-color: #fb565a;
   border: none;
-  margin: 40px 50px;
+
   display: inline-block;
 }
 
-.description-button:hover,
-.description-button:focus {
-  background-color: #e74246;
-}
-
-.description-button:active {
-  color: #ffb2b4;
-  background-color: #d7373b;
+.description-button {
+  margin: 40px 50px;
 }
 
 .feature-name {
@@ -95,11 +87,9 @@ a {
   text-transform: uppercase;
 }
 
-.feature .button {
+.feature-button {
   padding-left: 40px;
   padding-right: 40px;
-
-  display: inline-block;
 }
 
 .button-red {
@@ -170,10 +160,13 @@ a {
   line-height: 18px;
 }
 
+.contacts {
+  font-style: normal;
+}
+
 .full-address {
   line-height: 18px;
   color: #666666;
-  font-style: normal;
 }
 
 .company-name {
@@ -182,12 +175,8 @@ a {
   font-weight: bold;
 }
 
-address .button {
-  font-style: normal;
-
+.address-button {
   background-color: #fb565a;
-
-  display: inline-block;
 }
 
 .promo {
@@ -225,7 +214,6 @@ address .button {
   line-height: 18px;
 
   background-color: #eeeeee;
-  border: none;
   padding: 19px 89px;
 }
 
@@ -255,21 +243,8 @@ address .button {
 }
 
 .price-button {
-  background-color: #fb565a;
-
   padding-left: 60px;
   padding-right: 60px;
-
-  display: inline-block;
-}
-
-.price-button:focus,
-.price-button:hover {
-  background-color: #e74246;
-}
-
-.price-button:active {
-  background-color: #d7373b;
 }
 
 .pagination-item a[href] {
@@ -279,8 +254,6 @@ address .button {
   padding: 19px 21px;
 
   border: 2px solid #dbdbdb;
-
-  display: inline-block;
 }
 
 .pagination-item a[href]:focus,
@@ -300,25 +273,6 @@ address .button {
   background-color: #ffffff;
 }
 
-
-.next a{
-  color: #000000;
-
-  background-color: #eeeeee;
+.next-page a{
   padding: 19px 79px;
-
-  display: inline-block;
-
-  border: 2px solid #dbdbdb;
-}
-
-.next a:focus,
-.next a:hover {
-  background-color: #dfdfdf;
-}
-
-.next a:active {
-  color: #a8a8a8;
-
-  background-color: #d5d5d5;
 }
