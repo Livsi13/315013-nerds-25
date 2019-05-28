@@ -8,20 +8,24 @@
   </head>
   <body>
     <header class="header">
-      <nav class="main-navigation">
-        <a class="logo">
-          <img src="img/nerds-logo.svg" width="160" height="70" alt="Логотип студии Нёрдс">
-        </a>
-        <ul class="menu list-style-reset">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="store.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation list-style-reset">
-          <li class="cart"><a href="cart.html">Корзина</a></li>
-        </ul>
-      </nav>
+      <div class="main-navigation-wrapper">
+        <div class="container">
+          <a class="logo">
+            <img src="img/nerds-logo.svg" width="160" height="70" alt="Логотип студии Нёрдс">
+          </a>
+          <nav class="main-navigation">
+            <ul class="menu list-style-reset">
+              <li><a href="studio.html">Студия</a></li>
+              <li><a href="clients.html">Клиенты</a></li>
+              <li><a href="store.html">Магазин</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="user-navigation list-style-reset">
+              <li class="cart"><a href="cart.html">Корзина</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <div class="slider">
         <ul class="slider-list list-style-reset">
           <li class="slide">
@@ -67,7 +71,7 @@
         </div>
 
         <div class="feature">
-          <div class="container">
+          <div class="feature-img">
             <img src="img/illustration-2.jpg" width="300" height="146" alt="Схематичное изображение приложений">
           </div>
           <h3 class="feature-name">Приложения</h3>
@@ -76,7 +80,7 @@
         </div>
 
         <div class="feature">
-          <div class="container">
+          <div class="feature-img">
             <img src="img/illustration-3.jpg" width="300" height="146" alt="Схематичное изображение презентаций">
           </div>
           <h3 class="feature-name">Презентации</h3>
@@ -111,7 +115,9 @@
             </tr>
           </table>
         </div>
-        <div class="logo promo">
+      </section>
+      <section class="logo-container">
+        <div class="logo-promo">
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img\logo-1.jpg" alt="Логотип HTML Академии"></a>
           <a href="#"><img src="img\logo-2.jpg" alt="Логотип барбершоп Бородинский"></a>
           <a href="#"><img src="img\logo-3.jpg" alt="Логотип Pink"></a>
