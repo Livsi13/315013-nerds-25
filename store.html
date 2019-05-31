@@ -8,52 +8,27 @@
   </head>
   <body>
     <header class="header">
-      <div class="main-navigation-wrapper">
-        <div class="container">
-          <a class="logo">
-            <img src="img/nerds-logo.svg" width="160" height="70" alt="Логотип студии Нёрдс">
-          </a>
-          <nav class="main-navigation">
-            <ul class="menu list-style-reset">
-              <li><a href="studio.html">Студия</a></li>
-              <li><a href="clients.html">Клиенты</a></li>
-              <li><a href="store.html">Магазин</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-            <ul class="user-navigation list-style-reset">
-              <li class="cart"><a href="cart.html">Корзина</a></li>
-            </ul>
-          </nav>
-        </div>
+      <div class="container header-flex">
+        <a class="logo" href="index.html">
+          <img src="img/nerds-logo.svg" width="160" height="70" alt="Логотип студии Нёрдс">
+        </a>
+        <nav class="main-navigation">
+          <ul class="menu list-style-reset">
+            <li><a href="studio.html">Студия</a></li>
+            <li><a href="clients.html">Клиенты</a></li>
+            <li><a href="store.html">Магазин</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation list-style-reset">
+            <li class="cart"><a href="cart.html">Корзина</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <main class="container">
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
-      <div class="sort">
-        <p class="sort-type">Сортировать:</p>
-        <ul class="sort-types list-style-reset">
-          <li>
-            <a href="#" class="by-price">по&nbsp;цене</a>
-          </li>
-          <li>
-            <a href="#" class="by-type">по&nbsp;типу</a>
-          </li>
-          <li>
-            <a href="#" class="by-name">по&nbsp;названию</a>
-          </li>
-          <li>
-            <a href="#" class="more-to-less"><img src="img\icon-down-dir.svg" alt=" сортировка от большего к меньшему"></a>
-          </li>
-          <li>
-            <a href="#" class="less-to-more"><img src="img\icon-up-dir.svg" alt="сортировка от меньшего к большему"></a>
-          </li>
-        </ul>
-        <ul class="more-less list-style-reset">
-
-        </ul>
-      </div>
-      <div class="catalog-columns">
-        <section class="filter">
+    <main class="main-page">
+      <h1 class="page-title container">Магазин готовых шаблонов</h1>
+      <div class="catalog-columns container">
+        <section class="filter container">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="filters" action="https://echo.htmlacademy.ru/" method="post">
             <div class="sort-by-price">
@@ -113,7 +88,27 @@
           </form>
         </section>
 
-        <section class="catalog">
+        <section class="catalog container">
+          <div class="sort">
+            <ul class="sort-types list-style-reset">
+              <p class="sort-type">Сортировать:</p>
+              <li>
+                <a href="#" class="by-price">по&nbsp;цене</a>
+              </li>
+              <li>
+                <a href="#" class="by-type">по&nbsp;типу</a>
+              </li>
+              <li>
+                <a href="#" class="by-name">по&nbsp;названию</a>
+              </li>
+              <li>
+                <a href="#" class="more-to-less"><img src="img\icon-down-dir.svg" alt=" сортировка от большего к меньшему"></a>
+              </li>
+              <li>
+                <a href="#" class="less-to-more"><img src="img\icon-up-dir.svg" alt="сортировка от меньшего к большему"></a>
+              </li>
+            </ul>
+          </div>
           <h2 class="visually-hidden">Список шаблонов сайтов</h2>
           <ul class="catalog-list list-style-reset">
             <li class="catalog-item">
@@ -152,7 +147,7 @@
               <a href="#">Кваст</a>
               <a href="#" class="button price-button button-red">9&nbsp;900&nbsp;руб.</a>
             </li>
-            </ul>
+          </ul>
           <ul class="pagination-list list-style-reset">
             <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
@@ -162,8 +157,7 @@
         </section>
       </div>
     </main>
-    <div class="container">
-      <section class="map">
+      <section class="map container">
         <img src="img\map with marker.jpg" alt="Карта Как добраться?">
         <address class="contacts">
           <p class="company-name">NЁRDS DESIGN STUDIO</p>
@@ -172,7 +166,6 @@
           <a class="address-button button-red button" href="#">Напишите нам</a>
         </address>
       </section>
-    </div>
     <footer class="main-footer">
       <div class="container">
         <div class="social-btns">
