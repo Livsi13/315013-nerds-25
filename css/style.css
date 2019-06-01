@@ -50,8 +50,6 @@ a {
 
 .list-style-reset {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .menu {
@@ -90,9 +88,12 @@ a {
 
 .slider {
   background-color: #eeeeee;
+  width: 100%;
 
+}
+
+.slider-list {
   display: flex;
-  margin-bottom: 85px;
 }
 
 .slide-slogan {
@@ -125,7 +126,7 @@ a {
 
 .features {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-bottom: 85px;
 }
 
@@ -260,16 +261,16 @@ a {
   padding-right: 100px;
 }
 
-.main-footer {
-  display: flex;
+.map {
+  position: relative;
 }
 
-.map {
-  display: flex;
-
+.map-image {
   width: 100%;
+}
 
-  position: relative;
+.main-footer {
+  display: flex;
 }
 
 .social-btns {
@@ -295,7 +296,6 @@ a {
   padding: 40px;
   position: absolute;
   top: 40px;
-  left: 17px;
 }
 
 .full-address {
@@ -363,33 +363,38 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;
+  margin: 0;
+  padding: 0;
 }
 
 .sort {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 54px;
 }
 
 .sort-types {
   display: flex;
   align-items: center;
+
+  padding: 0;
+  margin: 0;
 }
 
 .sort-types li {
-  padding-right: 48px;
+  padding-right: 25px;
 }
 
 .sort-type {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-right: 267px;
+  padding-right: 255px;
 }
 
 .sort-by {
   line-height: 20px;
   color: #686d6f;
+  padding: 0;
+  margin: 0;
 }
 
 .sort-by-price {

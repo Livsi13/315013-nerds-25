@@ -35,9 +35,9 @@
               <label for="price-range" class="sort-type price-range">Стоимость:</label>
               <input type="range" id="price-range" name="price-range" min="0" max="15000">
               <label for="range-from" class="sort-type">От</label>
-              <input type="number" name="range-from" id="range-from">
+              <input type="text" name="range-from" id="range-from">
               <label for="range-to" class="sort-type">До</label>
-              <input type="number" name="range-to" id="range-to">
+              <input type="text" name="range-to" id="range-to">
             </div>
 
             <fieldset class="filter-item">
@@ -90,7 +90,7 @@
 
         <section class="catalog container">
           <div class="sort">
-            <ul class="sort-types list-style-reset">
+            <ul class="sort-types list-style-reset container">
               <p class="sort-type">Сортировать:</p>
               <li>
                 <a href="#" class="by-price">по&nbsp;цене</a>
@@ -157,26 +157,25 @@
         </section>
       </div>
     </main>
-      <section class="map container">
-        <img src="img\map with marker.jpg" alt="Карта Как добраться?">
+    <section class="map">
+      <img src="img\map with marker.jpg" alt="Карта Как добраться?" height="416px" width="1440px" class="map-image">
+      <div class="container">
         <address class="contacts">
           <p class="company-name">NЁRDS DESIGN STUDIO</p>
           <p class="full-address">191186, Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8</p>
           <a href="tel:+78122757575" class="full-address">тел.&nbsp;+7 (812) 275-75-75</a>
           <a class="address-button button-red button" href="#">Напишите нам</a>
         </address>
-      </section>
-    <footer class="main-footer">
-      <div class="container">
-        <div class="social-btns">
-          <a class="social-btn" href="#">Мы&nbsp;во&nbsp;Вконтакте</a>
-          <a class="social-btn" href="#">Мы&nbsp;в&nbsp;Фейсбук</a>
-          <a class="social-btn" href="#">Мы&nbsp;в&nbsp;Инстаграм</a>
-        </div>
-        <div class="footer-promo">
-          <p class="promo">Давайте дружить, это выгодно!
-          <span>Скидка&nbsp;10% для друзей из&nbsp;социальных сетей.</span></p>
-        </div>
+      </div>
+    </section>
+    <footer class="main-footer container">
+      <div class="social-btns">
+        <a class="social-btn" href="#">Мы&nbsp;во&nbsp;Вконтакте</a>
+        <a class="social-btn" href="#">Мы&nbsp;в&nbsp;Фейсбук</a>
+        <a class="social-btn" href="#">Мы&nbsp;в&nbsp;Инстаграм</a>
+      </div>
+      <div class="footer-promo">
+        <p class="promo">Давайте дружить, это выгодно!<span>Скидка&nbsp;10% для друзей из&nbsp;социальных сетей.</span></p>
       </div>
     </footer>
     <div class="popup">
