@@ -255,16 +255,22 @@ a {
 }
 
 .logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   margin-bottom: 70px;
+
+  display: flex;
 }
 
 .logo-container a {
-  width: 1200px;
+  width: 260px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 40px;
+}
+
+.logo-container a:first-child {
+  margin-left: 0px;
 }
 
 .map {
