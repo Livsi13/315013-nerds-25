@@ -36,12 +36,16 @@ a {
 .header-flex {
   display: flex;
   justify-content: space-between;
+
+  margin-bottom: -9px;
 }
 
 .main-navigation {
   line-height: 30px;
   text-transform: uppercase;
   background-color: #eeeeee;
+
+  padding-right: 40px;
 
   display: flex;
   flex-direction: row;
@@ -53,20 +57,38 @@ a {
 }
 
 .menu {
-  width: 760px;
-
   display: flex;
   justify-content: center;
-  padding-right: 50px;
+  padding-right: 198px;
+  padding-top: 10px;
 }
 
 .menu li {
-  padding-right: 50px;
+  padding-right: 47px;
 }
 
 .user-navigtion {
   margin-left: auto;
   justify-content: flex-end;
+
+  padding-right: 40px;
+}
+
+.cart{
+  padding-top: 11px;
+
+  position: relative;
+}
+
+.cart::before {
+  content: "";
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 18px;
+  left: -40px;
+  width: 16px;
+  height: 17px;
 }
 
 .menu a,
@@ -88,21 +110,122 @@ a {
 
 .slider {
   background-color: #eeeeee;
-  margin-bottom: 80px;
+  margin-bottom: 72px;
+
+  position: relative;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 590px;
+  bottom: 112px;
+  z-index: 100;
+
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider-controls .active::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slider-controls i {
+  position: relative;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls i::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+
+  width: 18px;
+  height: 18px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
 }
 
 .slide-slogan {
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 26px;
+
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
 }
+
+.slide p {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.slide {
+  display: none;
+  padding: 78px 0 91px 0;
+  padding-bottom: 87px;
+}
+
+.slide:nth-child(1) {
+  display: block;
+  background-image: url(../img/slide1.png);
+  background-repeat: no-repeat;
+  background-position: 86% 18px;
+}
+
+.slider-item:nth-child(2) {
+  background-image: url(../img/slide2.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.slider-item:nth-child(3) {
+  background-image: url(../img/slide3.png);
+  background-repeat: no-repeat;
+  background-position: 100% 20px;
+}
+
 
 .button {
   color: #ffffff;
   line-height: 18px;
   text-transform: uppercase;
 
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   padding-left: 45px;
   padding-right: 45px;
 
@@ -112,7 +235,17 @@ a {
 }
 
 .description-button {
-  margin: 40px 50px;
+  display: block;
+  width: 240px;
+  padding: 17px 0;
+
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 3px;
+  border: none;
 }
 
 
@@ -132,11 +265,20 @@ a {
 .features {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 85px;
+  margin-bottom: 64px;
 }
 
 .feature {
   width: 300px;
+}
+
+.feature p {
+  position: relative;
+  top: -13px;
+  left: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .feature:not(:last-child) {
@@ -147,6 +289,10 @@ a {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+
+  position: relative;
+  top: -6px;
+  left: 1px;
 }
 
 .feature-button {
@@ -198,7 +344,7 @@ a {
 
 .benefits {
   padding-top: 45px;
-  margin-bottom: 80px;
+  margin-bottom: 87px;
 
   display: flex;
   justify-content: space-between;
@@ -216,21 +362,34 @@ a {
 .lead {
   font-size: 45px;
   line-height: 45px;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
+  font-weight: 600;
 }
 
 .lead-slogan {
-  margin-bottom: 47px;
+  margin-bottom: 39px;
 }
 
 .service {
   padding-bottom: 30px;
+    line-height: 18px;
+    left: -3px;
+    position: relative;
+    top: 5px;
 }
 
 .service-description {
   line-height: 24px;
   text-transform: uppercase;
   font-weight: bold;
+  padding-bottom: 6px;
+}
+
+.indicators img {
+  position: relative;
+  top: 12px;
+
+  margin-bottom: 29px;
 }
 
 .indicators p {
@@ -238,24 +397,34 @@ a {
   text-transform: uppercase;
   font-weight: bold;
 
-  margin-top: 45px;
   margin-bottom: 50px;
+
+  position: relative;
+  top: -5px;
+  left: -20px;
 }
 
 .numbers th {
   font-size: 45px;
-  line-height: 10.06px;
+  line-height: 55.06px;
+  text-align: start;
 
-  padding-right: 18px;
   padding-bottom: 12px;
+
+  position: relative;
+  top: -22px;
+  left: -6px;
 }
 
 .numbers td {
   line-height: 18px;
+  position: relative;
+  top: -22px;
+  left: -6px;
 }
 
 .logo-container {
-  margin-bottom: 70px;
+  margin-bottom: 125px;
 
   display: flex;
 }
@@ -271,14 +440,29 @@ a {
 
 .logo-container a:first-child {
   margin-left: 0px;
+  position: relative;
+  top: 2px;
+}
+
+.logo-container a:nth-child(2) {
+  position: relative;
+  top: -4px;
+}
+
+.logo-container a:nth-child(3) {
+  position: relative;
+  top: -3px;
 }
 
 .map {
   position: relative;
+  width: 1440px;
 }
 
 .map-image {
-  width: 100%;
+    position: relative;
+    top: -1px;
+    left: 212px;
 }
 
 .main-footer {
@@ -301,18 +485,24 @@ a {
 
 .contacts {
   font-style: normal;
-
   box-sizing: border-box;
   background-color: #ffffff;
-  width: 320px;
-  padding: 40px;
+  width: 312px;
+  padding-top: 48px;
+  padding-left: 43px;
+  padding-bottom: 6px;
   position: absolute;
-  top: 40px;
+  top: 52px;
+  left: 353px;
 }
 
 .full-address {
   line-height: 18px;
   color: #666666;
+
+  position: relative;
+  top: -27px;
+  left: 7px;
 }
 
 .company-name {
@@ -320,11 +510,17 @@ a {
   line-height: 30px;
   font-weight: bold;
   margin-bottom: 35px;
+  position: relative;
+  top: -15px;
+  left: 6px;
 }
 
 .address-button {
   background-color: #fb565a;
   margin-top: 45px;
+  position: relative;
+  top: -41px;
+  left: 5px;
 }
 
 .promo {
