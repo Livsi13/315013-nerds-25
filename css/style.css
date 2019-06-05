@@ -119,6 +119,13 @@ a {
   color: #bcbcbc;
 }
 
+a.active {
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: red;
+    display: inline-block;
+}
+
 .slider {
   background-color: #eeeeee;
   margin-bottom: 80px;
@@ -126,8 +133,8 @@ a {
 
 .slider-controls {
   position: absolute;
-  left: 1270px;
-  bottom: 22px;
+  left: 953px;
+  bottom: 203px;
   z-index: 100;
 
   width: 160px;
@@ -483,6 +490,8 @@ a {
 .logo-container a:nth-child(4) {
   position: relative;
   top: 3px;
+
+  border: none;
 }
 
 .map {
@@ -839,6 +848,16 @@ a {
 .catalog-name {
   position: relative;
   top: -27px;
+  color: #000000;
+}
+
+.catalog-name:hover,
+.catalog-name:focus {
+  color: #fb565a;
+}
+
+.catalog-name:active {
+  color: #e3e3e3;
 }
 
 .hidden-description p {
@@ -1184,14 +1203,24 @@ a {
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 56px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 87px;
 }
+
+.pagination-item {
+  margin-right: 11px;
+  font-weight: 700;
+  position: relative;
+  top: 25px;
+}
+
 
 .pagination-item a[href] {
   color: #000000;
 
   background-color: #eeeeee;
-  padding: 19px 21px;
+  padding: 13px 19px;
 
   border: 2px solid #dbdbdb;
 
@@ -1216,6 +1245,10 @@ a {
   background-color: #ffffff;
 }
 
+
 .next-page a{
-  padding: 19px 79px;
+  text-align: center;
+  width: 218px;
+  height: 22px;
+  text-transform: uppercase;
 }
