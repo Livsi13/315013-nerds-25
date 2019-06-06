@@ -69,7 +69,7 @@ a {
 .menu {
   display: flex;
   justify-content: center;
-  padding-right: 199px;
+  padding-right: 195px;
   padding-top: 10px;
 }
 
@@ -77,11 +77,9 @@ a {
   padding-right: 47px;
 }
 
-.user-navigtion {
+.user-navigation {
   margin-left: auto;
   justify-content: flex-end;
-
-  padding-right: 40px;
 }
 
 .cart{
@@ -128,13 +126,14 @@ a.active {
 
 .slider {
   background-color: #eeeeee;
-  margin-bottom: 80px;
+  margin-bottom: 83px;
+  position: relative;
 }
 
 .slider-controls {
   position: absolute;
-  left: 953px;
-  bottom: 203px;
+  right: 559px;
+  bottom: 102px;
   z-index: 100;
 
   width: 160px;
@@ -191,21 +190,22 @@ a.active {
 .slide-slogan {
   max-width: 600px;
   margin: 0;
-  margin-bottom: 26px;
-  padding-left: 121px;
+  margin-bottom: 23px;
+  padding-left: 120px;
 
   font-size: 55px;
   line-height: 55px;
   font-weight: 700;
+  letter-spacing: -2px;
+  word-spacing: 4px;
 
   position: relative;
-  top: -4px;
+  top: -2px;
   left: -1px;
 }
 
 .slide p {
   max-width: 430px;
-  margin-bottom: 38px;
   margin-bottom: 38px;
   padding-left: 120px;
 }
@@ -220,16 +220,16 @@ a.active {
   display: block;
   background-image: url(../img/slide1.png);
   background-repeat: no-repeat;
-  background-position: 76% 19px;
+  background-position: 76% 16px;
 }
 
-.slider-item:nth-child(2) {
+.slide:nth-child(2) {
   background-image: url(../img/slide2.png);
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 
-.slider-item:nth-child(3) {
+.slide:nth-child(3) {
   background-image: url(../img/slide3.png);
   background-repeat: no-repeat;
   background-position: 100% 20px;
@@ -253,8 +253,8 @@ a.active {
 
 .description-button {
   display: block;
-  width: 240px;
-  padding: 17px 0;
+  width: 237px;
+  padding: 18px 0;
 
   font-size: 16px;
   text-transform: uppercase;
@@ -264,7 +264,7 @@ a.active {
   border-radius: 3px;
 
   position: relative;
-  left: 120px;
+  left: 122px;
 }
 
 
@@ -285,8 +285,8 @@ a.active {
   display: flex;
   justify-content: flex-start;
 
-  padding-left: 271px;
-  margin-bottom: 65px;
+  padding-left: 140px;
+  margin-bottom: 63px;
 }
 
 .feature {
@@ -309,19 +309,17 @@ a.active {
 .feature-name {
   font-size: 24px;
   line-height: 30px;
+  letter-spacing: -1px;
   text-transform: uppercase;
 
   position: relative;
   top: -6px;
-  left: 1px;
+  left: -2px;
 }
 
 .feature-button {
   padding-left: 40px;
   padding-right: 40px;
-
-  position: relative;
-  top: 1px;
 }
 
 .button-red {
@@ -367,7 +365,7 @@ a.active {
 }
 
 .benefits {
-  padding-top: 45px;
+  padding-top: 46px;
   margin-bottom: 87px;
 
   display: flex;
@@ -376,7 +374,7 @@ a.active {
 
 .services {
   width: 700px;
-  padding-left: 132px;
+  padding-left: 129px;
 }
 
 .services-list li::before {
@@ -398,16 +396,19 @@ a.active {
 .lead {
   font-size: 45px;
   line-height: 45px;
+  letter-spacing: -1px;
+  word-spacing: -3px;
   margin-bottom: 35px;
   font-weight: 600;
 }
 
 .lead-slogan {
+  word-spacing: 2px;
   margin-bottom: 36px;
 }
 
 .service {
-  padding-bottom: 30px;
+  padding-bottom: 27px;
     line-height: 18px;
     left: -3px;
     position: relative;
@@ -417,8 +418,11 @@ a.active {
 .service-description {
   line-height: 24px;
   text-transform: uppercase;
+  letter-spacing: -1px;
+  word-spacing: 4px;
   font-weight: bold;
   padding-bottom: 6px;
+  padding-left: 1px;
 }
 
 .indicators img {
@@ -433,6 +437,7 @@ a.active {
   text-transform: uppercase;
   font-weight: bold;
 
+  padding-left: 19px;
   margin-bottom: 50px;
 
   position: relative;
@@ -472,8 +477,8 @@ a.active {
 }
 
 .logo-container {
-  margin-bottom: 129px;
-  padding-left: 272px;
+  margin-bottom: 132px;
+  padding-left: 141px;
 
   display: flex;
 }
@@ -516,78 +521,80 @@ a.active {
   opacity: 0.2;
 }
 
-.client-logo a:hover,
-.client-logo a:focus {
+.clients-logo a:hover,
+.clients-logo a:focus {
   opacity: 1;
 }
 
-.client-logo a:active {
+.clients-logo a:active {
   opacity: 0.1;
+}
 
 .map {
   width: 1440px;
   position: relative;
   top: -4px;
+  left: -10px;
 }
 
 .main-footer {
   display: flex;
 }
 
-.footer-promo {
-  width: 561px;
-  display: flex;
-  margin-left: 140px;
-  margin-bottom: 80px;
-}
-
 .contacts {
   font-style: normal;
   box-sizing: border-box;
   background-color: #ffffff;
-  width: 312px;
+  width: 316px;
   padding-top: 48px;
-  padding-left: 43px;
-  padding-bottom: 6px;
+  padding-left: 39px;
+  padding-bottom: 44px;
   position: absolute;
-  top: 53px;
-  left: 153px;
+  top: 55px;
+  left: 151px;
 }
 
 .full-address {
   line-height: 18px;
   color: #666666;
-
   position: relative;
-  top: -27px;
-  left: 7px;
+  top: -30px;
+  left: 11px;
 }
 
 .company-name {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  margin-bottom: 35px;
-  position: relative;
-  top: -15px;
-  left: 6px;
+ font-size: 18px;
+ line-height: 30px;
+ font-weight: bold;
+ margin-bottom: 35px;
+ position: relative;
+ top: -17px;
+ left: 9px;
 }
 
 .address-button {
   background-color: #fb565a;
-  margin-top: 45px;
   position: relative;
-  top: -41px;
-  left: 5px;
+  top: 2px;
+  left: 9px;
+}
+
+.footer-promo {
+  width: 561px;
+  display: flex;
+  padding-left: 140px;
+  margin-bottom: 80px;
 }
 
 .promo {
   font-size: 37px;
   line-height: 34px;
+  letter-spacing: -1px;
   font-weight: 700;
+  word-spacing: -1px;
   position: relative;
   top: 27px;
-  right: 330px;
+  right: 328px;
 }
 
 .footer-promo span {
@@ -595,6 +602,9 @@ a.active {
   line-height: 22px;
   font-weight: normal;
   color: #444444;
+
+  letter-spacing: 0px;
+  word-spacing: 0px;
 }
 
 .social-btns {
@@ -788,6 +798,7 @@ a.active {
   font-size: 55px;
   line-height: 55px;
   text-align: center;
+  word-spacing: -2px;
   background-color: #eeeeee;
   padding-top: 76px;
   padding-bottom: 107px;
@@ -797,13 +808,13 @@ a.active {
 .more-to-less {
   display: block;
   position: relative;
-  left: 19px;
+  left: 25px;
 }
 
 .less-to-more {
   display: block;
   position: relative;
-  left: 15px;
+  left: 26px;
 }
 
 .more-to-less-current {
@@ -930,14 +941,11 @@ a.active {
 }
 
 .sort-types li {
-  padding-right: 25px;
-
-  padding-right: 22px;
-  position: relative;
-  left: 13px;
-  top: 2px;
-
   font-size: 15px;
+  padding-right: 16px;
+  position: relative;
+  left: 8px;
+  top: 2px;
 }
 
 .sort-type {
@@ -964,10 +972,6 @@ a.active {
   margin: 0;
 }
 
-.sort-by-price {
-  margin-bottom: 60px;
-}
-
 .filter-item {
   margin: 0;
   padding: 0;
@@ -977,7 +981,7 @@ a.active {
 
 .filter {
   width: 260px;
-  padding-left: 131px;
+  padding-left: 129px;
 }
 
 .filters button {
