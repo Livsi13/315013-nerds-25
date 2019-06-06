@@ -589,8 +589,7 @@ a.active {
 .promo {
   font-size: 37px;
   line-height: 34px;
-  letter-spacing: -1px;
-  word-spacing: -1px;
+  word-spacing: 8px;
   position: relative;
   top: 27px;
   right: 328px;
