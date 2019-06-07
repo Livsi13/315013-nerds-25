@@ -256,7 +256,6 @@ a.active {
   width: 237px;
   padding: 18px 0;
 
-  font-size: 16px;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
@@ -416,7 +415,6 @@ a.active {
 }
 
 .service-description {
-  line-height: 24px;
   text-transform: uppercase;
   letter-spacing: -1px;
   word-spacing: 4px;
@@ -589,13 +587,13 @@ a.active {
 .promo {
   font-size: 37px;
   line-height: 34px;
-  word-spacing: 8px;
   position: relative;
   top: 27px;
   right: 328px;
 }
 
 .footer-promo span {
+  display: block;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -603,6 +601,8 @@ a.active {
 
   letter-spacing: 0px;
   word-spacing: 0px;
+
+  padding-top: 11px;
 }
 
 .social-btns {
@@ -624,7 +624,6 @@ a.active {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  list-style: none;
 }
 
 .social-btn:hover,
@@ -643,7 +642,6 @@ a.active {
 
 .write-us {
   background-color: #ffffff;
-  color: #000000;
   padding: 70px 100px 80px 100px;
   position: fixed;
   top: 50%;
@@ -667,7 +665,6 @@ a.active {
   border: 0;
   cursor: pointer;
   position: absolute;
-  top: 0;
   top: 80px;
   right: 90px;
   background-image: url("../img/close-cross.svg");
@@ -709,7 +706,6 @@ a.active {
 }
 
 .write-us-item {
-  margin: 0;
   margin-bottom: 35px;
 }
 
@@ -718,16 +714,9 @@ a.active {
 }
 
 .write-us-item label {
-  font-size: 16px;
-  line-height: 18px;
   font-weight: 700;
-  color: #000000;
   display: block;
-  margin-bottom: 10px;
-}
-
-.write-us-item-name {
-  margin-right: 40px;
+  margin-bottom: 4px;
 }
 
 .write-us h2 {
@@ -742,19 +731,19 @@ a.active {
 .write-us-item input {
   font: inherit;
   border: 2px solid #d7dcde;
-  font-size: 16px;
   line-height: 18px;
   color: #444444;
-  padding: 13px 14px;
+  padding-left: 14px;
   box-sizing: border-box;
   width: 360px;
+  height: 56px;
   outline: none;
 }
 
 .write-us-form textarea {
   padding: 12px 13px;
   width: 730px;
-  font-size: 16px;
+  height: 118px;
   line-height: 18px;
   color: #444444;
   vertical-align: top;
@@ -762,6 +751,10 @@ a.active {
   border-radius: 3px;
   outline: none;
   resize: none;
+}
+
+.write-us-item input[name="your-name"] {
+  margin-right: 40px;
 }
 
 .write-us-form textarea:hover {
@@ -773,7 +766,7 @@ a.active {
   border-color: #000000;
 }
 
-.write-us-form input:invalid, .contact-us-form textarea:invalid {
+.write-us-form input:invalid, .write-us-form textarea:invalid {
   color: #e74246;
   border-color: #e74246;
 }
@@ -792,6 +785,11 @@ a.active {
   border-color: #e74246;
 }
 
+.submit-button {
+  position: relative;
+  left: 1px;
+}
+
 .page-title {
   font-size: 55px;
   line-height: 55px;
@@ -799,6 +797,7 @@ a.active {
   word-spacing: -2px;
   background-color: #eeeeee;
   padding-top: 76px;
+  padding-left: 25px;
   padding-bottom: 107px;
   margin-bottom: 60px;
 }
@@ -1030,7 +1029,6 @@ a.active {
 
 .filter-item legend {
   font-size: 18px;
-  line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -1103,8 +1101,6 @@ a.active {
   padding: 8px 10px;
   margin-left: 10px;
 
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
   text-align: center;
   color: #283136;
 
@@ -1209,7 +1205,6 @@ a.active {
 
 .filter li {
   color: #283136;
-  font-size: 16px;
   line-height: 20px;
 }
 
